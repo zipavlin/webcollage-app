@@ -1,8 +1,11 @@
+const path = require('path');
 const { Router, json } = require('express');
 const Joi = require('joi');
 const axios = require('axios');
 const mongo = require('express-mongo-db');
 const { ObjectId } = require('mongodb');
+const normalize = require('./normalizeWorkItems');
+const thumbnail = require('./makeThumbnail');
 const secrets = require('./secrets');
 
 const router = Router();
@@ -153,19 +156,26 @@ router.post('/api/work', async (req, res) => {
     });
   }
   else {
+    const minSize = normalize.minSize(payload.items);
     payload.title = payload.title ? payload.title : 'Untitled';
     payload.author = payload.author ? payload.author : 'Anonymous';
     // add created at to payload
     payload.created_at = new Date();
-    // clip all items to min width & height
-
-    // remove state
-    payload.items = payload.items.map(item => {
+    // clip all items to min width & height and remove state
+    payload.items = normalize.normalizeItems(payload.items, minSize).map(item => {
       delete item.state;
       return item;
     });
     // add thumbnail
-    payload.thumbnail = null;
+    try {
+      // prepare thumbnail filename
+      const thumbnailFilename = `${payload.title}-${new Date().getTime()}.png`;
+      payload.thumbnail = thumbnailFilename;
+      // make thumbnail
+      thumbnail(thumbnailFilename, payload.items, minSize.width, minSize.height);
+    } catch (err) {
+      console.log(err);
+    }
     // save result
     try {
       const cursor = await req.db.collection('posts').insertOne(payload);

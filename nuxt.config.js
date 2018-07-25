@@ -1,4 +1,7 @@
 module.exports = {
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
   /*
   ** Headers of the page
   */
@@ -10,7 +13,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'A webcollage app (server & frontend)' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lora|Source+Sans+Pro:300,600' }
     ]
   },
   /*
