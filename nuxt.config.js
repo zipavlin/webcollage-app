@@ -2,9 +2,6 @@ module.exports = {
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
-  /*
-  ** Headers of the page
-  */
   head: {
     title: 'Web collage experiment',
     meta: [
@@ -17,27 +14,20 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lora|Source+Sans+Pro:300,600' }
     ]
   },
-  /*
-  ** Register modules
-  */
+  loading: { color: '#3B8070' },
   modules: [
     ['nuxt-express-module', {
-        expressPath: 'api',
-        routesPath: 'api/routes.js'
+      expressPath: 'api',
+      routesPath: 'api/routes.js'
     }],
     '@nuxtjs/axios',
   ],
-  /*
-  ** Customize the progress bar color
-  */
-  loading: { color: '#3B8070' },
-  /*
-  ** Build configuration
-  */
+  plugins: [
+    { src: '~/plugins/vue-mrr-tool', ssr: false },
+    { src: '~/plugins/vue-clip-tool', ssr: false }
+  ],
   build: {
-    /*
-    ** Run ESLint on save
-    */
+    vendor: ['@zipavlin/vue-mrr-tool', '@zipavlin/vue-clip-tool'],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
@@ -49,5 +39,5 @@ module.exports = {
       }
     }
   }
-}
+};
 

@@ -2,29 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bdfa67dd-01ca-4336-8af9-5b97ca5926ff" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/api/makeThumbnail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/WorkItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/zigap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webcollage-app.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/EditorContextMenu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/EditorItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/editor/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/vue-clip-tool.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/plugins/vue-mrr-tool.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/normalizeWorkItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/normalizeWorkItems.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/routes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/webshot.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/README.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,52 +26,114 @@
       <file leaf-file-name="default.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/layouts/default.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="-7">
               <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nuxt.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nuxt.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
               <folding>
-                <element signature="e#487#867#0" />
-                <element signature="e#425#467#0" />
+                <element signature="e#137#592#0" />
+                <element signature="e#605#733#0" />
+                <element signature="e#975#1195#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/index.vue">
+        <entry file="file://$PROJECT_DIR$/pages/editor/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+            <state relative-caret-position="-7">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
               <folding>
-                <element signature="e#250#298#0" expanded="true" />
-                <element signature="e#722#1069#0" />
+                <element signature="n#nav#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#nav#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+                <element signature="n#editor-context-menu#0;n#div#0;n#template#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="EditorItem.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/EditorItem.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+            <state relative-caret-position="-7">
+              <caret line="106" column="55" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
+              <folding>
+                <element signature="e#1210#1323#0" />
+                <element signature="e#1343#4138#0" />
+                <element signature="e#4158#4270#0" />
+                <element signature="e#4290#4606#0" />
+                <element signature="n#style#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="normalizeWorkItems.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/normalizeWorkItems.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/store/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1392">
-              <caret line="107" column="50" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WorkItem.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/WorkItem.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+            <state relative-caret-position="189">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#85#223#0" />
+                <element signature="e#138#217#0" />
+                <element signature="e#327#661#0" />
+                <element signature="e#705#806#0" />
+                <element signature="e#860#1582#0" />
+                <element signature="e#1390#1574#0" />
+                <element signature="e#1629#1694#0" />
+                <element signature="e#1768#1804#0" />
+                <element signature="e#1854#1890#0" />
+                <element signature="e#1936#1978#0" />
+                <element signature="e#2018#2180#0" />
+                <element signature="e#2133#2172#0" />
+                <element signature="e#2221#2499#0" />
+                <element signature="e#2261#2314#0" />
+                <element signature="e#2320#2491#0" />
+                <element signature="e#2547#2653#0" />
+                <element signature="e#2698#2775#0" />
+                <element signature="e#2820#3028#0" />
+                <element signature="e#2955#3018#0" />
+                <element signature="e#3097#3224#0" />
+                <element signature="e#3127#3216#0" />
+                <element signature="e#3278#3353#0" />
+                <element signature="e#3410#3940#0" />
+                <element signature="e#3618#3932#0" />
+                <element signature="e#3992#4542#0" />
+                <element signature="e#4211#4534#0" />
+                <element signature="e#4598#4862#0" />
+                <element signature="e#4799#4854#0" />
+                <element signature="e#4911#4999#0" />
+                <element signature="e#5061#5680#0" />
+                <element signature="e#5734#6860#0" />
+                <element signature="e#6013#6286#0" />
+                <element signature="e#6911#6999#0" />
+                <element signature="e#7050#7135#0" />
+                <element signature="e#7194#7748#0" />
+                <element signature="e#7412#7740#0" />
+                <element signature="e#7802#8376#0" />
+                <element signature="e#8031#8368#0" />
+                <element signature="e#8427#8515#0" />
+                <element signature="e#8572#8816#0" />
+                <element signature="e#8870#8959#0" />
+                <element signature="e#9013#9103#0" />
+                <element signature="e#9158#9249#0" />
+                <element signature="e#9302#9560#0" />
+                <element signature="e#9615#9856#0" />
+                <element signature="e#9908#10016#0" />
+                <element signature="e#10038#10868#0" />
+                <element signature="e#10065#10862#0" />
+                <element signature="e#10140#10854#0" />
+                <element signature="e#10191#10844#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,8 +143,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -112,7 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/api/webshot.js" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.js" />
         <option value="$PROJECT_DIR$/api/test.js" />
@@ -120,13 +169,22 @@
         <option value="$PROJECT_DIR$/api/routes.js" />
         <option value="$PROJECT_DIR$/api/makeThumbnail.js" />
         <option value="$PROJECT_DIR$/components/WorkItem.vue" />
-        <option value="$PROJECT_DIR$/nuxt.config.js" />
         <option value="$PROJECT_DIR$/components/Header.vue" />
         <option value="$PROJECT_DIR$/components/BasicHeader.vue" />
         <option value="$PROJECT_DIR$/components/ImageHeader.vue" />
         <option value="$PROJECT_DIR$/layouts/default.vue" />
-        <option value="$PROJECT_DIR$/pages/index.vue" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pages/index.vue" />
+        <option value="$PROJECT_DIR$/components/EditorContextMenu.vue" />
+        <option value="$PROJECT_DIR$/history/history.js" />
+        <option value="$PROJECT_DIR$/plugins/vue-mrr-tool.js" />
+        <option value="$PROJECT_DIR$/plugins/vue-clip-tool.js" />
+        <option value="$PROJECT_DIR$/pages/editor/index.vue" />
+        <option value="$PROJECT_DIR$/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/plugins/history.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/components/EditorItem.vue" />
+        <option value="$PROJECT_DIR$/store/index.js" />
       </list>
     </option>
   </component>
@@ -183,6 +241,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,13 +252,23 @@
             <path>
               <item name="webcollage-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="webcollage-app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webcollage-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webcollage-app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="editor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webcollage-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webcollage-app" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -214,10 +283,13 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\server\www\5_PLAYGROUND\webcollage-app\plugins" />
+      <recent name="C:\server\www\5_PLAYGROUND\webcollage-app\history" />
+      <recent name="C:\server\www\5_PLAYGROUND\webcollage-app\components" />
       <recent name="C:\server\www\5_PLAYGROUND\webcollage-app\api" />
     </key>
   </component>
@@ -245,27 +317,28 @@
       <updated>1532424776204</updated>
       <workItem from="1532424777441" duration="7208000" />
       <workItem from="1532435910052" duration="5270000" />
-      <workItem from="1532501771316" duration="21137000" />
+      <workItem from="1532501771316" duration="21215000" />
+      <workItem from="1532586397232" duration="4825000" />
+      <workItem from="1532672852025" duration="7919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33615000" />
+    <option name="totallyTimeSpent" value="46437000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="GfmBrowser" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32897604" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32897604" />
       <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1444563" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14765458" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -288,128 +361,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pages/README.md">
-      <provider editor-type-id="Gfm" />
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="144">
-            <caret line="6" column="5" selection-start-line="6" selection-end-line="6" selection-end-column="32" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nuxt.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding>
-            <element signature="e#455#583#0" />
-            <element signature="e#710#1017#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3840">
-          <caret line="160" selection-start-line="160" selection-end-line="160" />
-          <folding>
-            <element signature="e#294#1038#0" />
-            <element signature="e#1232#1491#0" />
-            <element signature="e#1585#2260#0" />
-            <element signature="e#2338#3087#0" />
-            <element signature="e#3159#3740#0" />
-            <element signature="e#3928#5587#0" />
-            <element signature="e#3920#4038#0" />
-            <element signature="e#4173#5585#0" />
-            <element signature="e#4469#4520#0" />
-            <element signature="e#4656#4935#0" />
-            <element signature="e#4948#4979#0" />
-            <element signature="e#4493#4918#0" />
-            <element signature="e#4935#5067#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/makeThumbnail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#824#1312#0" />
-            <element signature="e#868#1308#0" />
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/secrets.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/normalizeWorkItems.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2856">
-          <caret line="119" column="51" lean-forward="true" selection-start-line="119" selection-start-column="51" selection-end-line="119" selection-end-column="51" />
-          <folding>
-            <element signature="e#1942#3141#0" />
-            <element signature="e#1970#2005#0" />
-            <element signature="e#2028#2063#0" />
-            <element signature="e#2099#2554#0" />
-            <element signature="e#2634#3320#0" />
-            <element signature="e#2803#2998#0" />
-            <element signature="e#3401#4027#0" />
-            <element signature="e#3485#3803#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="144">
-            <caret line="6" column="5" selection-start-line="6" selection-end-line="6" selection-end-column="32" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nuxt.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/secrets.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="e#294#1038#0" />
-            <element signature="e#1232#1491#0" />
-            <element signature="e#1585#2260#0" />
-            <element signature="e#2338#3087#0" />
-            <element signature="e#3159#3740#0" />
-            <element signature="e#3928#5587#0" />
-            <element signature="e#3920#4038#0" />
-            <element signature="e#4173#5585#0" />
-            <element signature="e#4469#4520#0" />
-            <element signature="e#4656#4935#0" />
-            <element signature="e#4948#4979#0" />
-            <element signature="e#4493#4918#0" />
-            <element signature="e#4935#5067#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -430,13 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/web-collage.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -444,51 +396,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Untitled-1532508813863.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532508959736.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532509015631.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532509269395.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532509523666.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532509612697.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532509657133.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532510530078.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532510557611.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532510671441.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Untitled-1532508813863.png" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532508959736.png" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532509015631.png" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532509269395.html" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532509523666.png" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532509612697.png" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532509657133.png" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532510530078.png" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532510557611.png" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532510671441.png" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -496,82 +413,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="12" selection-start-line="12" selection-end-line="27" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532514872123.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532514872123.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532515161868.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532515161868.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532519029860.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api/test.js" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532514872123.html" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532514872123.png" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532515161868.html" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532515161868.png" />
+    <entry file="file://$PROJECT_DIR$/static/thumbnails/Untitled-1532519029860.png" />
     <entry file="file://$PROJECT_DIR$/api/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="208" column="24" selection-start-line="208" selection-start-column="24" selection-end-line="208" selection-end-column="24" />
-          <folding>
-            <element signature="e#294#1038#0" />
-            <element signature="e#1232#1491#0" />
-            <element signature="e#1585#2260#0" />
-            <element signature="e#2338#3087#0" />
-            <element signature="e#3159#3740#0" />
-            <element signature="e#3928#5587#0" />
-            <element signature="e#3920#4038#0" />
-            <element signature="e#4173#5585#0" />
-            <element signature="e#4469#4520#0" />
-            <element signature="e#4656#4935#0" />
-            <element signature="e#4948#4979#0" />
-            <element signature="e#4493#4918#0" />
-            <element signature="e#4935#5067#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/README.md">
-      <provider editor-type-id="Gfm" />
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="144">
@@ -580,12 +435,12 @@
           <second_editor />
         </state>
       </provider>
+      <provider editor-type-id="Gfm" />
     </entry>
     <entry file="file://$PROJECT_DIR$/api/secrets.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/README.md">
-      <provider editor-type-id="Gfm" />
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="120">
@@ -594,6 +449,7 @@
           <second_editor />
         </state>
       </provider>
+      <provider editor-type-id="Gfm" />
     </entry>
     <entry file="file://$PROJECT_DIR$/components/AppLogo.vue">
       <provider selected="true" editor-type-id="text-editor">
@@ -602,72 +458,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middleware/README.md">
-      <provider editor-type-id="Gfm" />
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/README.md">
-      <provider editor-type-id="Gfm" />
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/middleware/README.md" />
+    <entry file="file://$PROJECT_DIR$/plugins/README.md" />
     <entry file="file://$PROJECT_DIR$/api/makeThumbnail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="30" column="76" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="76" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#824#1312#0" />
-            <element signature="e#868#1308#0" />
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/store/README.md">
-      <provider editor-type-id="Gfm" />
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="264">
-            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/components/WorkItem.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/normalizeWorkItems.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1392">
-          <caret line="107" column="50" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nuxt.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
-          <folding>
-            <element signature="e#455#583#0" />
-            <element signature="e#710#1017#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,32 +474,209 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layouts/default.vue">
+    <entry file="file://$PROJECT_DIR$/api/normalizeWorkItems.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-          <folding>
-            <element signature="e#487#867#0" />
-            <element signature="e#425#467#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
-          <folding>
-            <element signature="e#250#298#0" expanded="true" />
-            <element signature="e#722#1069#0" />
-          </folding>
+        <state relative-caret-position="2568">
+          <caret line="107" column="50" selection-start-line="107" selection-start-column="50" selection-end-line="107" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+        <state relative-caret-position="480">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="264">
+            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="Gfm" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layouts/default.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/EditorContextMenu.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/vue-mrr-tool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/vue-clip-tool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/WorkItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.nuxt/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2110">
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.nuxt/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4808">
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/history.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/history/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+          <folding>
+            <element signature="e#137#592#0" />
+            <element signature="e#605#733#0" />
+            <element signature="e#975#1195#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/editor/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="n#nav#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#nav#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+            <element signature="n#editor-context-menu#0;n#div#0;n#template#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/EditorItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="106" column="55" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
+          <folding>
+            <element signature="e#1210#1323#0" />
+            <element signature="e#1343#4138#0" />
+            <element signature="e#4158#4270#0" />
+            <element signature="e#4290#4606#0" />
+            <element signature="n#style#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#85#223#0" />
+            <element signature="e#138#217#0" />
+            <element signature="e#327#661#0" />
+            <element signature="e#705#806#0" />
+            <element signature="e#860#1582#0" />
+            <element signature="e#1390#1574#0" />
+            <element signature="e#1629#1694#0" />
+            <element signature="e#1768#1804#0" />
+            <element signature="e#1854#1890#0" />
+            <element signature="e#1936#1978#0" />
+            <element signature="e#2018#2180#0" />
+            <element signature="e#2133#2172#0" />
+            <element signature="e#2221#2499#0" />
+            <element signature="e#2261#2314#0" />
+            <element signature="e#2320#2491#0" />
+            <element signature="e#2547#2653#0" />
+            <element signature="e#2698#2775#0" />
+            <element signature="e#2820#3028#0" />
+            <element signature="e#2955#3018#0" />
+            <element signature="e#3097#3224#0" />
+            <element signature="e#3127#3216#0" />
+            <element signature="e#3278#3353#0" />
+            <element signature="e#3410#3940#0" />
+            <element signature="e#3618#3932#0" />
+            <element signature="e#3992#4542#0" />
+            <element signature="e#4211#4534#0" />
+            <element signature="e#4598#4862#0" />
+            <element signature="e#4799#4854#0" />
+            <element signature="e#4911#4999#0" />
+            <element signature="e#5061#5680#0" />
+            <element signature="e#5734#6860#0" />
+            <element signature="e#6013#6286#0" />
+            <element signature="e#6911#6999#0" />
+            <element signature="e#7050#7135#0" />
+            <element signature="e#7194#7748#0" />
+            <element signature="e#7412#7740#0" />
+            <element signature="e#7802#8376#0" />
+            <element signature="e#8031#8368#0" />
+            <element signature="e#8427#8515#0" />
+            <element signature="e#8572#8816#0" />
+            <element signature="e#8870#8959#0" />
+            <element signature="e#9013#9103#0" />
+            <element signature="e#9158#9249#0" />
+            <element signature="e#9302#9560#0" />
+            <element signature="e#9615#9856#0" />
+            <element signature="e#9908#10016#0" />
+            <element signature="e#10038#10868#0" />
+            <element signature="e#10065#10862#0" />
+            <element signature="e#10140#10854#0" />
+            <element signature="e#10191#10844#0" />
+          </folding>
         </state>
       </provider>
     </entry>
