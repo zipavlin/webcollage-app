@@ -11,7 +11,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lora|Source+Sans+Pro:300,600' }
+      { rel: 'stylesheet', href: '/flexboxgrid.min.css' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lora:400,700,700i|Roboto+Slab:300,700' }
     ]
   },
   loading: { color: '#3B8070' },

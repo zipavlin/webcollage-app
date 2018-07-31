@@ -6,45 +6,55 @@
 
 <style lang="scss">
 html {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Lora", sans-serif;
   font-size: 18px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
 }
 body {
-  padding: 3em;
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-h1, h2, h3 {
-  font-family: "Lora", serif;
+h1, h2, h3, .h {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
 }
 h1 {
   font-size: 3.8em;
   margin-bottom: .5em;
 }
-p.big {
-  $lineWidth: 2.5em;
-  position: relative;
-  margin-top: .5em;
-  font-size: 1.5em;
-  line-height: 1.5;
-  padding-left: calc(#{$lineWidth} + 20px);
-  font-weight: 300;
+a {
+  font-weight: bold;
+  color: inherit;
   font-style: italic;
+}
+a.btn {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: black;
+  border: 3px solid #F8A597;
   box-sizing: border-box;
-  &:before {
+  padding: 9px 57px 8px 26px;
+  text-decoration: none;
+  &:after {
     content: '';
     position: absolute;
     display: block;
-    width: $lineWidth;
-    height: 1px;
-    left: 0;
-    top: 22px;
+    width: 63px;
+    height: 3px;
     background-color: black;
+    right: -17px;
+    top: calc(50% - 1px);
   }
 }
 
