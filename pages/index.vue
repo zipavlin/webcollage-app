@@ -1,50 +1,41 @@
 <template>
   <div id="home">
-    <section id="home-header">
-      <div class="row">
-         <div class="col-md-3 col-md-offset-3 col-sm-5 col-sm-offset-2" id="home-header-content">
-           <h1><small>A Web Collage</small><br>Experiment</h1>
-           <p>
-             Like all <strike>weird</strike> peculiar projects, this one started with a story as well.
-             <br><br>
-             It is an experiment. A proof of concept, that we (and you) can (re)use online digital art in the form of web sites to create something new. A new work. A new piece of art.
-             <br><br>
-             All of this comes with some <a href="#home-disclaimer">limitations and quirks</a>. You can <a href="#home-footer">help</a> or just have fun and <nuxt-link to="/editor">create something new</nuxt-link>.
-           </p>
-           <br><br>
-           <a href="#home-list" class="btn">view collages</a>
-         </div>
-        <div class="col-md-6 col-sm-5" id="home-header-image">
-          <div class="dots"><span class="h">W<small>coll</small></span></div>
-          <div class="dog row center-sm">
-            <div class="inner-wrap">
-              <img src="/header-right.png" alt="Dog Collage. So much Wow!">
-              <span class="h">E<small>x</small></span>
-            </div>
-          </div>
+    <section id="header-content">
+      <h1><small>A Web Collage</small><br>Experiment</h1>
+      <p>
+        Like all <strike>weird</strike> peculiar projects, this one started with a story as well.
+        <br><br>
+        It is an experiment. A proof of concept, that we (and you) can (re)use online digital art in the form of web sites to create something new. A new work. A new piece of art.
+        <br><br>
+        All of this comes with some <a href="#home-disclaimer">limitations and quirks</a>. You can <a href="#home-footer">help</a> or just have fun and <nuxt-link to="/editor">create something new</nuxt-link>.
+      </p>
+      <br><br>
+      <a href="#home-list" class="btn">view collages</a>
+    </section>
+    <div id="header-image">
+      <div class="dots"><span class="h">W<small>coll</small></span></div>
+      <div class="dog row center-sm">
+        <div class="inner-wrap">
+          <img src="/header-right.png" alt="Dog Collage. So much Wow!">
+          <span class="h">E<small>x</small></span>
         </div>
       </div>
-    </section>
-    <section id="home-disclaimer">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-3 col-sm-9 col-sm-offset-2 row middle-sm">
-          <h2 class="h col-sm-3" id="home-disclaimer-title">A Friendly Disclaimer</h2>
-          <p class="col-sm-9" id="home-disclaimer-content">
-            Collages are assembled from different webpages. Opening one will load multiple websites, which can get quite data transfer intensive. <strong>You probably don’t want to open collages on your mobile data</strong> and would make more sense to check it out on desktop computer. Also: this is a ‘weekend’ project, so everything doesn’t work as it should.
-            <a href="#home-footer">Click here to help</a>.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="home-list"></section>
-    <section id="home-cat">
-      <img src="/cat.png" alt="'If it fits i sits' - cat">
-    </section>
-    <section id="home-editor"></section>
-    <section id="home-footer"></section>
-    <div>
-      <work-item v-for="(work, i) of works" :key="i" :id="work.id" :thumbnail="work.thumbnail" :title="work.title" :author="work.author"></work-item>
     </div>
+    <section id="disclaimer">
+      <h2 class="h col-sm-3" id="home-disclaimer-title">A Friendly Disclaimer</h2>
+      <p class="col-sm-9" id="home-disclaimer-content">
+        Collages are assembled from different webpages. Opening one will load multiple websites, which can get quite data transfer intensive. <strong>You probably don’t want to open collages on your mobile data</strong> and would make more sense to check it out on desktop computer. Also: this is a ‘weekend’ project, so everything doesn’t work as it should.
+        <a href="#home-footer">Click here to help</a>.
+      </p>
+    </section>
+    <section id="list">
+      <work-item v-for="(work, i) of works" :key="i" :id="work.id" :thumbnail="work.thumbnail" :title="work.title" :author="work.author"></work-item>
+    </section>
+    <div id="cat">
+      <img src="/cat.png" alt="'If it fits i sits' - cat">
+    </div>
+    <section id="editor"></section>
+    <section id="footer"></section>
   </div>
 </template>
 
@@ -95,101 +86,114 @@
   $pink: #F8A597;
   #home {
     position: relative;
+    display: grid;
+    // define grid
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 12px;
+    grid-template-rows: [header-start] auto [header-end disclaimer-start] auto [disclaimer-end list-start] auto [list-end editor-start] auto [editor-end footer-start] auto [footer-end];
+    grid-template-areas: 
+      "header-content header-content header-content header-content header-content header-content header-content header-image header-image header-image header-image header-image"
+      "disclaimer disclaimer disclaimer disclaimer disclaimer disclaimer disclaimer disclaimer disclaimer disclaimer disclaimer disclaimer"
+      ". . . . list list list list list list list ."
+      ". . . editor editor editor editor editor . . . ."
+      "footer footer footer footer footer footer footer footer footer footer footer footer";
+    
+    
   }
-  #home-header {
-    position: relative;
-    &-content {
-      padding-top: 72px;
-      h1 {
+  #header-content {
+    grid-area: header-content;
+    padding-top: 72px;
+    h1 {
+      display: block;
+      position: relative;
+      font-size: 72px;
+      line-height: 50px;
+      margin-bottom: 52px;
+      small {
+        font-size: 48px;
+        margin-left: -48px;
+      }
+      &:before {
+        content: '';
         display: block;
-        position: relative;
-        font-size: 72px;
-        line-height: 50px;
-        margin-bottom: 52px;
-        small {
-          font-size: 48px;
-          margin-left: -48px;
-        }
-        &:before {
-          content: '';
-          display: block;
-          position: absolute;
-          width: 664px;
-          height: 122px;
-          left: -210px;
-          top: -28px;
-          background: $yellow;
-          mix-blend-mode: multiply;
-        }
-      }
-      p {
-        position: relative;
-        max-width: 430px;
-        line-height: 33px;
-        font-size: 20px;
-        letter-spacing: -0.01em;
-      }
-      .btn {
-        margin-left: -39px;
+        position: absolute;
+        width: 664px;
+        height: 122px;
+        left: -210px;
+        top: -28px;
+        background: $yellow;
+        mix-blend-mode: multiply;
       }
     }
-    &-image {
-      .dots {
-        position: relative;
-        height: 408px;
-        background: url(/halftone.png);
-        background-repeat: repeat-x;
-        background-size: contain;
-        background-position: left bottom;
-        .h {
-          position: absolute;
-          bottom: -60px;
-          left: -60px;
-          font-size: 288px;
-          color: white;
-          small {
-            font-size: 180px;
-            margin-left: -40px;
-          }
+    p {
+      position: relative;
+      max-width: 430px;
+      line-height: 33px;
+      font-size: 20px;
+      letter-spacing: -0.01em;
+    }
+    .btn {
+      margin-left: -39px;
+    }
+  } 
+  #header-image {
+    grid-area: header-image;
+    .dots {
+      position: relative;
+      height: 408px;
+      background: url(/halftone.png);
+      background-repeat: repeat-x;
+      background-size: contain;
+      background-position: left bottom;
+      .h {
+        position: absolute;
+        bottom: -60px;
+        left: -60px;
+        font-size: 288px;
+        color: white;
+        small {
+          font-size: 180px;
+          margin-left: -40px;
         }
       }
-      .dog {
+    }
+    .dog {
+      position: relative;
+      margin-top: -160px;
+      img {
         position: relative;
-        margin-top: -160px;
-        img {
-          position: relative;
-          z-index: 1;
+        z-index: 1;
+      }
+      .h {
+        position: relative;
+        font-size: 288px;
+        margin-left: -90px;
+        bottom: 50px;
+        small {
+          font-size: 180px;
+          color: #F8A597;
+          margin-left: -52px;
         }
-        .h {
-          position: relative;
-          font-size: 288px;
-          margin-left: -90px;
-          bottom: 50px;
-          small {
-            font-size: 180px;
-            color: #F8A597;
-            margin-left: -52px;
-          }
-        }
-        .inner-wrap {
-          position: relative;
-          &:after {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 474px;
-            height: 65px;
-            top: 80px;
-            left: 130px;
-            background-image: linear-gradient(to right, $yellow 80%, rgba(250, 216, 73, 0) 100%);
-            mix-blend-mode: multiply;
-            z-index: 2;
-          }
+      }
+      .inner-wrap {
+        position: relative;
+        &:after {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 474px;
+          height: 65px;
+          top: 80px;
+          left: 130px;
+          background-image: linear-gradient(to right, $yellow 80%, rgba(250, 216, 73, 0) 100%);
+          mix-blend-mode: multiply;
+          z-index: 2;
         }
       }
     }
   }
-  #home-disclaimer {
+  #disclaimer {
+    grid-area: disclaimer;
     position: relative;
     padding: 63px 0;
     margin-top: -129px;
@@ -213,8 +217,10 @@
       position: relative;
     }
   }
-  #home-list {}
-  #home-cat {
+  #list {
+    grid-area: list;
+  }
+  #cat {
     $img-top: 1269px;
     position: absolute;
     top: 0;
@@ -237,7 +243,11 @@
       background-color: $pink;
     }
   }
-  #home-editor {}
-  #home-footer {}
+  #editor {
+    grid-area: editor;
+  }
+  #footer {
+    grid-area: footer;
+  }
 </style>
 
