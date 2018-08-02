@@ -5,6 +5,8 @@
 </template>
 
 <style lang="scss">
+  $yellow: rgba(250, 216, 73, 0.75);
+  $pink: #F8A597;
 html {
   font-family: "Lora", sans-serif;
   font-size: 18px;
@@ -24,7 +26,6 @@ h1, h2, h3, .h {
 }
 h1 {
   font-size: 3.8em;
-  margin-bottom: .5em;
 }
 a {
   font-weight: bold;
@@ -46,6 +47,7 @@ a.btn {
   box-sizing: border-box;
   padding: 9px 57px 8px 26px;
   text-decoration: none;
+  box-shadow: 3px 3px 0 $yellow;
   &:after {
     content: '';
     position: absolute;

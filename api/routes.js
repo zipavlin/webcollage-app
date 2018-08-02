@@ -81,13 +81,13 @@ router.get('/api/url/:url?', async (req, res) => {
 });
 // get paginated works
 router.get('/api/works/:page?', async (req, res) => {
-  const page = req.params.page || 0;
-  const amount = 12;
+  const page = req.params.page || 1;
+  const amount = 5;
   try {
     const count = await req.db.collection('posts').count({});
     const posts = await req.db.collection('posts').find({}, {
       sort: {created_at: -1},
-      skip: page * amount,
+      skip: (page - 1) * amount,
       limit: amount,
       fields: {_id: 1, thumbnail: 1, author: 1, title: 1} // this should be renamed to 'projection' in newer version
     }).toArray();
@@ -97,6 +97,7 @@ router.get('/api/works/:page?', async (req, res) => {
       error: null,
       payload: {
         count,
+        pages: Math.ceil(count / amount),
         hasPrev: page >= 2,
         hasNext: count - ((page + 1) * amount) > 0,
         posts
